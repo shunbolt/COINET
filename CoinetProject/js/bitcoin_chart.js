@@ -5,6 +5,8 @@ function makeAChart(dates,prices,devise){
     
     console.log(dates[1]+prices[1]);
     
+    reset_canvas();
+    
     var ctx = document.getElementById("chart").getContext('2d');
     ctx.canvas.width = 300;
     ctx.canvas.height = 100;
@@ -28,8 +30,17 @@ function makeAChart(dates,prices,devise){
             }]
         }    
     });
+    
   
 }
+
+function reset_canvas(){
+    
+    $("#chart").remove();
+    $("#chart-container").append('<canvas id="chart" width="100%" height="30"></canvas>');
+    
+}
+
 
 
 
