@@ -183,33 +183,66 @@
       <!-- Breadcrumbs-->
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
-          <a href="index.html">Home</a>    
+          <a href="index.html">Coinet</a>    
         </li>  
         <li class="breadcrumb-item">
           <a href="index.html"> Documentation </a>    
         </li>  
           
-        <li class="breadcrumb-item active">Template</li>
+        <li class="breadcrumb-item active"> Course </li>
       </ol>
         
     
         <div class = "text-center"> 
-                <h1 >Title</h1>
-                <h3> Subtitle</h3>
+                <h1 >Chapter 3</h1>
+                <h3> Digital signatures</h3>
           </div>  
         <div class = "row">
             <div class = "col-sm-2"> </div>
             
             <div class = "col-sm"> 
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae finibus nulla. Sed at augue nibh. Aliquam in euismod arcu. Etiam sed pretium nisi, quis maximus est. Suspendisse non lacus tempus, feugiat lorem id, consequat sem. Sed tempor elit est, eu dignissim erat fringilla eu. Duis ac erat et mi condimentum gravida. Proin lacinia sapien non sagittis tristique. Mauris facilisis ex vitae lacus convallis, nec tempor ante placerat. </p>
+            <br>
+            <p> For the first time, we will work on a cryptographic notion. Digital signature is a basic protocol, widely used in a lot of softwares dealing with financial transactions or contract management. The concept is quite simple to understand but very efficient. </p>
             
-            <p>Maecenas interdum lectus nibh, non fringilla ante consequat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam efficitur tempus ex, ut fermentum velit mollis nec. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce volutpat sodales finibus. Aliquam ullamcorper, velit non iaculis sodales, odio erat congue enim, nec volutpat mauris sem quis mi. Maecenas molestie quam lectus, et tincidunt diam accumsan eu. Maecenas fringilla hendrerit consequat. Integer vestibulum mi in libero semper, a varius sem vestibulum. Suspendisse odio metus, volutpat at tincidunt sed, malesuada at arcu. Proin fermentum erat quis interdum rutrum. Praesent blandit mollis ipsum, eget consectetur quam aliquam vel. Curabitur blandit lorem eget iaculis mollis. Integer aliquam lorem felis. Praesent vel convallis risus. Aenean et elit molestie, vestibulum neque id, vehicula magna. </p>
+            <p>Digitals signatures tends to prove that a message has been sent by an identifiable sender, it proves also that the message has not been altered (notion of integrity). Plus, it is impossible to deny the fact that the  sender sent a message (non repudiation). </p>
             
-            <p>Praesent venenatis sodales velit id vehicula. Integer bibendum venenatis dui vel finibus. Etiam gravida mollis leo ut euismod. Pellentesque in maximus augue. Ut convallis tellus nec lorem facilisis, ac viverra dui mollis. Quisque at dui faucibus orci tincidunt finibus id sit amet nulla. Sed quis commodo est. Pellentesque ultrices imperdiet mollis. Suspendisse quis ante ac orci imperdiet semper. Duis et ipsum sodales, feugiat orci ut, fringilla neque. Donec nec elementum lorem. Maecenas tempor risus nec euismod pulvinar. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec at tortor ut dolor iaculis auctor sed eu nibh. </p>
+            <p>The protocol of digitals signatures is composed by three algorithms. </p>
+                <ul>* an algorithm that creates a pair of keys</ul>
+                <ul>* an algorithm that signs the message</ul>
+                <ul>* an algorithm of verification</ul>
             
-            <p>Etiam at varius orci, quis eleifend dui. Curabitur elementum scelerisque nunc quis hendrerit. Nullam nec justo ut turpis facilisis tempus. Suspendisse tortor mi, commodo quis enim ornare, mollis consectetur odio. Etiam metus lacus, rhoncus nec scelerisque nec, feugiat ut nisi. Ut tristique diam sem, ac suscipit mauris fermentum at. Aenean id nisi molestie, euismod lacus vitae, tempus sem. Sed id mi vel sem placerat fringilla ac non est. Donec malesuada eleifend sem, ut egestas eros vehicula dignissim. Curabitur eu dui fringilla, ultricies velit at, congue nulla. Vivamus vulputate orci metus, sit amet euismod purus accumsan id. Mauris velit lorem, commodo quis ipsum sed, ultrices sagittis diam. Donec sem metus, porta quis sapien vel, viverra luctus nibh. Nullam sit amet sollicitudin nisi, quis dictum nibh. Vivamus ac faucibus ex. Fusce sollicitudin, erat a interdum viverra, ante dui maximus mauris, ut rhoncus neque leo id lectus. </p>
-            
-            <p> Aenean finibus diam non congue viverra. Ut cursus felis sit amet sem pretium, vitae dictum risus maximus. Maecenas eget sollicitudin risus. Donec dapibus sem molestie quam iaculis volutpat. Mauris vitae dui id urna sagittis feugiat eu eget tortor. Vivamus eu neque eu felis commodo suscipit. Integer venenatis, nisl eu convallis hendrerit, nibh nisl pellentesque mi, interdum consequat lacus felis ut lacus. Integer vel vulputate lorem. </p>
+            <p>We are going to continue our explanation with our ledger for illustration. Why do we need digital signatures?</p>
+                
+            <p>Imagine that you are sharing your ledger with your roomates, what does protect you from their bad intentions? In fact it could be very easy for them to create false transactions from you to them...</p>
+                
+            <p>That is why you should sign every transaction from your account in order to validate the fact that you agree with this transaction. In the case of a real ledger you have to trust in the other users because signatures are very easy to falsify. In the case of a cryptocurrency you can trust in the signatures, they will protect you from others users because it is nearly impossible to imitate them.</p>
+
+            <p>So in the case of Coinet, we first use a key creation algorithm. This step will give you a secret key (sk) and a public key (pk) that you will need in the following algorithms. We will not deal with the mathematicalsides of the algorithms because it would be very difficult for novices and it would overtake the field of our topic. The important thing to know about this is that keys have to be created in pair because they have to be compatible even if it is impossible to guess one key knowing the other one.The keys have to appear as random numbers.</p>
+                
+            <p>The public key is transmitted to the ledger and everyone should be able to see it meanwhile the secret key MUST be hidden from the other users.</p>
+                
+            <p>Logic, isn't it ?</p>
+                
+            <p>Then after a transactin we should use the signing function. for those of you who are comfortable with basic programming notions, the signing algorithm could be presented like that: </p>
+                
+            <p>sign(message, sk) = numeric signature.</p>
+                
+            <img src = "images/img_sign.png" width = "100%">
+
+
+            <p>It means that the algorithm takes in input the message and your secret key (that has to be secret) and outputs a numeric signature. the equivalent of the signature you would put on the ledger.</p>
+
+            <p>The signature is a binary number of 256 bits (256 characters 1 or 0). It is possible to verify that the signature is true or if it is a fraud thanks to the function of verification.</p>
+                
+            <p>Verify(message,signature,pk)= True or False</p>
+                
+            <img src = "images/img_verify.png" width = "100%">
+                
+            <p>The verification function takes in input the original message, the signature and the public key in order to validate or not the authenticity of the sender.</p>
+                
+            <p>the digital signature looks random and it is impossible to find back a sk from the signature. the only way would be to find it by guessing it and verify it. It is nearly impossible because there are too many possibilities with a 256 bit number. To illustrate this, see the bonus chapter about this topic.</p>
+
+
                 </div>
             <div class = "col-sm-2"> </div>
         </div>
