@@ -211,7 +211,6 @@
                 <option value = "EUR" selected > Euro </option>
                 <option value = "USD"> US dollar</option>
                 <option value = "CNY"> Chinese Yuan </option>
-                
             </select>
             </div>
                <div class= "p-1">
@@ -228,7 +227,68 @@
             
         </div>
       </div>
-    </div>
+        
+        
+        <div class = "row">
+        
+        <div class = "col-md-3"></div>
+        <div class = "col-md-6">
+        <div class="card mb-6 ">
+            <div class = "card-header">
+                <i class = "fa fa-bitcoin"></i> Investment simulator
+            </div>
+            <div class = "card-body form-check-inline">
+                <div class = "p-2"> 
+                <input  class = "form-control form-control-sm" type = "number" placeholder = "Quantity" id = "sim_quantity">
+                </div>
+                <div class = "p-2">
+                    <select class = "form-control form-control-sm" id = "sim_currency"> 
+                    <option value = "EUR" selected > Euro </option>
+                    <option value = "USD"> US dollar</option>
+                    <option value = "CNY"> Chinese Yuan </option>
+                </select>
+                </div>
+                <button type = "button" class = "btn btn-primary"> Set simulation </button> 
+                </div>
+            </div>
+        </div>
+        <div class = "col-md-2"></div>
+        
+            
+            
+        </div>
+        
+    <div class="card mb-3">
+        <div class="card-header">
+          <i class="fa fa-table"></i> Investment history</div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Quantity</th>
+                  <th>Currency</th>
+                  <th>Evolution</th>    
+                  <th>Chart</th>
+                </tr>
+              </thead>
+              <tbody>
+               <tr>
+                  <td>17/04/2017</td>
+                  <td> 200 </td>
+                  <td>EUR</td>
+                   <td>+ 1000</td>
+                  <td> <button type = "button" class = "btn btn-primary" value ="setChart" > Set chart </button> </td>
+                  
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+      </div>
+    </div>    
     <!-- /.container-fluid-->
     <!-- /.content-wrapper-->
     <footer class="sticky-footer">
