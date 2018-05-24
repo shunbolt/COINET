@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title> Coinet</title>
+  <!-- Bootstrap core CSS-->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin.css" rel="stylesheet">
+   
+</head>
+
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+    
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <a class="navbar-brand" href= "home.html">
+      <img src = "images/title.png"  style = "width:80px;"> 
+      </a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"> </span>
+    </button>
+      <!-- Navigation bar left-->
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Profile">
+          <a class="nav-link" href="#">
+            <i class="fa fa-fw fa-user"></i>
+            <span class="nav-link-text">Profile</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Simulation">
+          <a class="nav-link" href="#">
+            <i class="fa fa-fw fa-bitcoin"></i>
+            <span class="nav-link-text">Simulation</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseCharts" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-area-chart"></i>
+            <span class="nav-link-text">Charts</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseCharts">
+            <li>
+              <a href="charts_coin.html">Bitcoin chart</a>
+            </li>
+            <li>
+              <a href="#">Other charts</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Documents">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseDocuments" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-file"></i>
+            <span class="nav-link-text">Documentation</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseDocuments">
+            <li>
+              <a href="article_coin.html">Bitcoin</a>
+            </li>
+            <li>
+              <a href="#">Blockchain</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Quizs">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseQuizs" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-question"></i>
+            <span class="nav-link-text">Quizs</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseQuizs">
+            <li>
+              <a href="quiz_coin.html">Quiz 1</a>
+            </li>
+            <li>
+              <a href="#">Quiz 2</a>
+            </li>
+            <li>
+              <a href="#">Quiz 3</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="External links">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseLinks" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-link"></i>
+            <span class="nav-link-text"> Links </span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseLinks">
+            <li>
+              <a href="https://github.com/shunbolt/Coinet/tree/master">Github</a>
+            </li>
+            <li>
+              <a href="https://www.reddit.com/r/btc">Reddit</a>
+            </li>
+            <li>
+              <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction">Bootstrap </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="navbar-nav sidenav-toggler">
+        <li class="nav-item">
+          <a class="nav-link text-center" id="sidenavToggler">
+            <i class="fa fa-fw fa-angle-left"></i>
+          </a>
+        </li>
+      </ul>
+        
+        <!-- Navigation bar top -->
+        
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle mr-lg-2" id="alertsDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-fw fa-bell"></i>
+            <span class="d-lg-none">Alerts
+              <span class="badge badge-pill badge-warning">6 New</span>
+            </span>
+            <span class="indicator text-warning d-none d-lg-block">
+              <i class="fa fa-fw fa-circle"></i>
+            </span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="alertsDropdown">
+            <h6 class="dropdown-header">New Alerts:</h6>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <span class="text-success">
+                <strong>
+                  <i class="fa fa-long-arrow-up fa-fw"></i>Status Update</strong>
+              </span>
+              <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <span class="text-danger">
+                <strong>
+                  <i class="fa fa-long-arrow-down fa-fw"></i>Status Update</strong>
+              </span>
+              <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <span class="text-success">
+                <strong>
+                  <i class="fa fa-long-arrow-up fa-fw"></i>Status Update</strong>
+              </span>
+              <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item small" href="#">View all alerts</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <form class="form-inline my-2 my-lg-0 mr-lg-2">
+            <div class="input-group">
+              <input class="form-control" type="text" placeholder="Search for...">
+              <span class="input-group-append">
+                <button class="btn btn-primary" type="button">
+                  <i class="fa fa-search"></i>
+                </button>
+              </span>
+            </div>
+          </form>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+            <i class="fa fa-fw fa-sign-out"></i>Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>  
+  <div class="content-wrapper">
+    <div class="container-fluid">
+      <!-- Breadcrumbs-->
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="index.html">home</a>    
+        </li>  
+        <li class="breadcrumb-item">
+          <a href="index.html"> Documentation </a>    
+        </li>  
+          
+        <li class="breadcrumb-item active"> Course </li>
+      </ol>
+        
+    
+        <div class = "text-center"> 
+                <h1 >Chapter 5</h1>
+                <h3>The Blockchain</h3>
+          </div>  
+        <div class = "row">
+            <div class = "col-sm-2"> </div>
+            
+            <div class = "col-sm"> 
+            <br>
+            
+                <p>Thanks to Bitcoin, we often hear about blockchains on the TV or on the internet. But the truth is that only a few people know about what is really behind this technology. In this chapter we will try to explain the basics of the blockchain so that you can understand it.</p>
+                <h5>What is the blockchain?</h5>
+                <p>The blockchain is a technology of storage and transmission of informations that is transparent, secure and without any authority.</p>
+                <p>In fact, in our case of Coinet, the blockchain is the list of every transaction since the beginning of coinet. It is our entire ledger. Since it is organised in blocks of informations, we will call it a blockchain instead of a ledger.</p>
+                
+                <img src = "images/blockchain.png" width = "100%">
+                
+                <p>Every block is composed of three things:</p>
+                <ul>The list of transactions</ul>
+                <ul>The proof of work of the current block</ul>
+                <ul>The hash of the previous block</ul>
+                <p>Including the hash of the previous block is the amazing Idea that makes the blockchain working well. It allows to securise the information because it does not permit any modification on any block without modifying all the blocks coming after and it would take a long time to calculate again all the proofs of work.</p>
+                
+                <img src = "images/blockchain_security.png" width = "100%">
+                
+                <p>The blockchain is being decentralized, so if you want to know which blockchain you have to trust in, basically you have to choose the largest one. Indeed, if a change is made in a blockchain, the miner who falsified a block has to be very efficient in order to calculate again all the lasts proofs of work before that anyone else finds one proof of work for the last block of the atual good blockchain. It would mean that the only way to falsify a blockchain is to own more than 50% of the computational power of the whole community of miners, which is impossible for a cryptocurrency like the Bitcoin.</p>
+                
+                <p>Basically, every miner has his own copy of the blockchain. He is calculating a proof of work as fast as he can. If a miner finds a proof of work, he adds a block to the chain with all the lasts transactions and he broadcasts his new version of the blockchain.</p>
+                <img src = "images/blockchain_broadcasting_1.png" width = "100%">
+                <img src = "images/blockchain_broadcasting_2.png" width = "100%">
+                <p>The person that creates a new block earns some Coinets coming from thin air (reward). This very special transaction does not need any digital signature. The reward system is optionnal and depends of the cryptocurreny. A fee system can also be implemented: a percentage can be taken on every transactions in order to generate money for the miner.</p>
+                
+                <p>For the people who just want to use a cryptocurency for example, they just have to listen for the blocks broadcasted by the miners and have their personnal copies of the blockchain.</p>
+                
+                <p>This is the end of our course about how the bitcoin works. We hope that you understood the Coinet technologies and We hope that you enjoyed it. We invite you to read our bonus chapters about the 256 bit binary words and the applications of the blockchain. </p>
+                
+
+
+                </div>
+            <div class = "col-sm-2"> </div>
+        </div>
+        
+        
+        <div class = "btn-group-toggle" data-toggle = "buttons">
+        
+        <a href ="#" class = "btn btn-primary btn-lg active" role = "button" aria-pressed = "true"> 1 </a>
+            
+        
+        </div>
+       
+    </div>
+      
+      
+    
+      
+      
+      
+      
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
+    <footer class="sticky-footer">
+      <div class="container">
+        <div class="text-center">
+          <small>Copyright © Coinet 2018</small>
+        </div>
+      </div>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+    <!-- Logout Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Custom scripts for all pages-->
+     <script src="vendor/chart.js/Chart.min.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin.min.js"></script>
+    <!-- Custom scripts for this page-->
+    <script src="js/sb-admin-charts.min.js"></script>
+    <script src="js/bitcoin_chart.js"></script>
+  </div>
+</body>
+
+</html>
