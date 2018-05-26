@@ -3,24 +3,24 @@ function submit(){
     
     
     
-    var answer1 = $('input[name=answer1]:checked').val() ;
-    var answer2 = $('input[name=answer2]:checked').val() ;
-    var answer3 = $('input[name=answer3]:checked').val() ;
-    var answer4 = $('input[name=answer4]:checked').val() ;
-    var answer5 = $('input[name=answer5]:checked').val() ;
-    var answer6 = $('input[name=answer6]:checked').val() ;
-    var answer7 = $('input[name=answer7]:checked').val() ;
-    var answer8 = $('input[name=answer8]:checked').val() ;
-    var answer9 = $('input[name=answer9]:checked').val() ;
-    var answer10 = $('input[name=answer10]:checked').val() ;
-    var answer11 = $('input[name=answer11]:checked').val() ;
-    var answer12 = $('input[name=answer12]:checked').val() ;
-    var answer13 = $('input[name=answer13]:checked').val() ;
-    var answer14 = $('input[name=answer14]:checked').val() ;
-    var answer15 = $('input[name=answer15]:checked').val() ;
-    var answer16 = $('input[name=answer16]:checked').val() ;
-    var answer17 = $('input[name=answer17]:checked').val() ;
-    var answer18 = $('input[name=answer18]:checked').val() ;
+    var answer1 = $('input[id=answer1]:checked').val() ;
+    var answer2 = $('input[id=answer2]:checked').val() ;
+    var answer3 = $('input[id=answer3]:checked').val() ;
+    var answer4 = $('input[id=answer4]:checked').val() ;
+    var answer5 = $('input[id=answer5]:checked').val() ;
+    var answer6 = $('input[id=answer6]:checked').val() ;
+    var answer7 = $('input[id=answer7]:checked').val() ;
+    var answer8 = $('input[id=answer8]:checked').val() ;
+    var answer9 = $('input[id=answer9]:checked').val() ;
+    var answer10 = $('input[id=answer10]:checked').val() ;
+    var answer11 = $('input[id=answer11]:checked').val() ;
+    var answer12 = $('input[id=answer12]:checked').val() ;
+    var answer13 = $('input[id=answer13]:checked').val() ;
+    var answer14 = $('input[id=answer14]:checked').val() ;
+    var answer15 = $('input[id=answer15]:checked').val() ;
+    var answer16 = $('input[id=answer16]:checked').val() ;
+    var answer17 = $('input[id=answer17]:checked').val() ;
+    var answer18 = $('input[id=answer18]:checked').val() ;
     
     var tab = new Array(0, 0);
     
