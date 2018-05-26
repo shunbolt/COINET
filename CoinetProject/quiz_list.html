@@ -42,18 +42,26 @@
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Simulation">
-          <a class="nav-link" href="charts_coin.html">
+          <a class="nav-link" href="#">
             <i class="fa fa-fw fa-bitcoin"></i>
             <span class="nav-link-text">Simulation</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-          <a class="nav-link" href="charts_coin.html">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseCharts" data-parent="#exampleAccordion">
             <i class="fa fa-fw fa-area-chart"></i>
             <span class="nav-link-text">Charts</span>
           </a>
+          <ul class="sidenav-second-level collapse" id="collapseCharts">
+            <li>
+              <a href="charts_coin.html">Bitcoin chart</a>
+            </li>
+            <li>
+              <a href="#">Other charts</a>
+            </li>
+          </ul>
         </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Documentation">
+         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Simulation">
           <a class="nav-link" href="documentation.html">
             <i class="fa fa-fw fa-file"></i>
             <span class="nav-link-text">Documentation</span>
@@ -174,221 +182,37 @@
           <li class="breadcrumb-item">
           <a href="home.html">Home</a>
         </li>
-        <li class="breadcrumb-item"> 
-            <a href = "#" >Quiz </a> 
-          </li>
-          <li class = "breadcrumb-item active"> Bitcoin </li>
+          <li class = "breadcrumb-item active"> Quizs </li>
       </ol>
         
-    <div class = "d-flex justify-content-center">
+        <div class = "d-flex justify-content-center">
         <div class ="card text-white bg-primary mb-3 text-center" style = "width: 14rem"> 
-        <font face = "Rockwell"> <h1 > Quiz </h1>  </font> 
-        <font face = "Rockwell"> <h3> Theme : Digital Signatures </h3> </font> 
+        <font face = "Rockwell"> <h1 > Quiz list </h1>  </font> 
         </div>
-    </div>
-      
-     
-     <div class="row">
-            <div class="col-4">
-
-                <div class="card mb-3">
-                    <div class="card-header d-flex">
-                      <div class ="mr-auto p-2">
-                          <i class="fa fa-circle"></i> While creating a digital signature system, the first program to implement is   
-                          </div>
-                            </div>
-                     <div class="card-body">
-                      <form name='formulaire'>
-
-                        <div class ="p-2">
-                            <input type="radio" name="question1" id="answer1" />
-                            <label for="answer1">an algorithm that creates a pair of keys</label>
-                        </div>
-                         <div class ="p-2">
-                            <input type="radio" name="question1" id="answer2" />
-                            <label for="answer2">an algorithm that signs the message</label>
-                        </div>
-                         <div class ="p-2">
-                            <input type="radio" name="question1" id="answer3" />
-                            <label for="answer3">an algorithm of verification</label>
-                        </div>
-                        </form>
-                    </div>
-                </div>
-
-            </div>
-         <div class="col-4">
-
-                <div class="card mb-3">
-                    <div class="card-header d-flex">
-                      <div class ="mr-auto p-2">
-                          <i class="fa fa-circle"></i> Thanks to digital signatures 
-                          </div>
-                            </div>
-                     <div class="card-body">
-                      <form name='formulaire'>
-
-                        <div class ="p-2">
-                            <input type="radio" name="question2" id="answer4" />
-                            <label for="answer4">no one can know who sent the message</label>
-                        </div>
-                         <div class ="p-2">
-                            <input type="radio" name="question2" id="answer5" />
-                            <label for="answer5">we can verify who sent the message</label>
-                        </div>
-                         <div class ="p-2">
-                            <input type="radio" name="question2" id="answer6" />
-                            <label for="answer6">answer C</label>
-                        </div>
-                        </form>
-                    </div>
-                </div>
-
-            </div>
-         <div class="col-4">
-
-                <div class="card mb-3">
-                    <div class="card-header d-flex">
-                      <div class ="mr-auto p-2">
-                          <i class="fa fa-circle"></i> In the sign function, we need  
-                          </div>
-                            </div>
-                     <div class="card-body">
-                      <form name='formulaire'>
-
-                        <div class ="p-2">
-                            <input type="radio" name="question3" id="answer7" />
-                            <label for="answer7">a private key</label>
-                        </div>
-                         <div class ="p-2">
-                            <input type="radio" name="question3" id="answer8" />
-                            <label for="answer8">a public key</label>
-                        </div>
-                         <div class ="p-2">
-                            <input type="radio" name="question3" id="answer9" />
-                            <label for="answer9">a proof of work</label>
-                        </div>
-                        </form>
-                    </div>
-                </div>
-
-            </div>
-         <div class="col-4">
-
-                <div class="card mb-3">
-                    <div class="card-header d-flex">
-                      <div class ="mr-auto p-2">
-                          <i class="fa fa-circle"></i> The numeric signature is composed by  
-                          </div>
-                            </div>
-                     <div class="card-body">
-                      <form name='formulaire'>
-
-                        <div class ="p-2">
-                            <input type="radio" name="question4" id="answer10" />
-                            <label for="answer10">a 256 bit binary word</label>
-                        </div>
-                         <div class ="p-2">
-                            <input type="radio" name="question4" id="answer11" />
-                            <label for="answer11">a password created by the user</label>
-                        </div>
-                         <div class ="p-2">
-                            <input type="radio" name="question4" id="answer12" />
-                            <label for="answer12">the private key</label>
-                        </div>
-                        </form>
-                    </div>
-                </div>
-
-            </div>
-         <div class="col-4">
-
-                <div class="card mb-3">
-                    <div class="card-header d-flex">
-                      <div class ="mr-auto p-2">
-                          <i class="fa fa-circle"></i> Which result is not possible to return fo the function of verification?  
-                          </div>
-                            </div>
-                     <div class="card-body">
-                      <form name='formulaire'>
-
-                        <div class ="p-2">
-                            <input type="radio" name="question5" id="answer13" />
-                            <label for="answer13"> true</label>
-                        </div>
-                         <div class ="p-2">
-                            <input type="radio" name="question5" id="answer14" />
-                            <label for="answer14"> the numeric signature</label>
-                        </div>
-                         <div class ="p-2">
-                            <input type="radio" name="question5" id="answer15" />
-                            <label for="answer15"> false</label>
-                        </div>
-                        </form>
-                    </div>
-                </div>
-
-            </div>
-         <div class="col-4">
-
-                <div class="card mb-3">
-                    <div class="card-header d-flex">
-                      <div class ="mr-auto p-2">
-                          <i class="fa fa-circle"></i> How do you find a secret key thanks to a private key 
-                          </div>
-                            </div>
-                     <div class="card-body">
-                      <form name='formulaire'>
-
-                        <div class ="p-2">
-                            <input type="radio" name="question6" id="answer16" />
-                            <label for="answer16">by adding the words composing the keys</label>
-                        </div>
-                         <div class ="p-2">
-                            <input type="radio" name="question6" id="answer17" />
-                            <label for="answer17">thanks to the pair creation function</label>
-                        </div>
-                         <div class ="p-2">
-                            <input type="radio" name="question6" id="answer18" />
-                            <label for="answer18">it is impossible</label>
-                        </div>
-                        </form>
-                    </div>
-                </div>
-
-            </div>
-      
-      </div>
-      
-        
-      <div class = "row">
-        <div class = "col-4"> </div>
-        
-        <div class = "col-4">
-            <div class="card mb-3">
-                <div class="card-header">
-                    <i class="fa fa-pie-chart"></i> Pie Chart result
-                </div>
-                <div class="card-body" id="chart_container">
-                    <canvas id="myPieChart" width="100%" height="100"></canvas>
-                </div>
-                <div class="card-footer d-flex justify-content-end">
-                    <button type="button" class="btn btn-outline-primary"  value="setChart" onclick = "submit();"> submit </button>
-                </div>
-            </div>
-            
-        <div class = "text-center ">
-            <a  href = "quiz_coin_2.html" role = "button" class = "btn btn-info btn-lg " > Next Quiz </a>
-                </div>  
-            
         </div>
-          
         
-          
-        <div class = "col-4"> </div>  
+      
+        <div class = "row">
+        
+        <div class = "col-sm-2"> </div>
+            
+        <div class = "col-sm">
+            
+        <a type="button" class="btn btn-danger btn-lg btn-block" href = "quiz_coin.html">Quiz 1 : Digital signatures  </a>    
+        <a type="button" class="btn btn-danger btn-lg btn-block" href = "quiz_coin_2.html">Quiz 2 : The ledger </a>    
+        <a type="button" class="btn btn-danger btn-lg btn-block" href = "quiz_coin_3.html">Quiz 3 : Digital signatures</a>    
+           
+            
+            
         </div>    
+            
+            
+        <div class = "col-sm-2"> </div>    
         
         
+        
+        
+        </div>
         
       </div>
     <!-- /.container-fluid-->
