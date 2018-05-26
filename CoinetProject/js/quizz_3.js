@@ -31,14 +31,14 @@ var answer18 = $('input[id=answer18]:checked').val() ;
         tab[0] = tab[0]+1;
     }
     
-    if(answer5 == "on"){
+    if(answer4 == "on"){
         tab[1] = tab[1]+1;
     }
     else{
         tab[0] = tab[0]+1;
     }
     
-    if(answer7 == "on"){
+    if(answer8 == "on"){
         tab[1] = tab[1]+1;
     }
     else{
@@ -52,7 +52,7 @@ var answer18 = $('input[id=answer18]:checked').val() ;
         tab[0] = tab[0]+1;
     }
     
-    if(answer14 == "on"){
+    if(answer15 == "on"){
         tab[1] = tab[1]+1;
     }
     else{

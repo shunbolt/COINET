@@ -24,35 +24,35 @@ var answer18 = $('input[id=answer18]:checked').val() ;
     
     var tab = new Array(0, 0);
     
-    if(answer1 == "on"){
+    if(answer2 == "on"){
         tab[1] = tab[1]+1;
     }
     else{
         tab[0] = tab[0]+1;
     }
     
-    if(answer5 == "on"){
+    if(answer6 == "on"){
         tab[1] = tab[1]+1;
     }
     else{
         tab[0] = tab[0]+1;
     }
     
-    if(answer7 == "on"){
+    if(answer9 == "on"){
         tab[1] = tab[1]+1;
     }
     else{
         tab[0] = tab[0]+1;
     }
     
-    if(answer10 == "on"){
+    if(answer12 == "on"){
         tab[1] = tab[1]+1;
     }
     else{
         tab[0] = tab[0]+1;
     }
     
-    if(answer14 == "on"){
+    if(answer15 == "on"){
         tab[1] = tab[1]+1;
     }
     else{
