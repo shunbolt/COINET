@@ -178,8 +178,10 @@
         
     
         <div class = "text-center"> 
+            <font face= "Rockwell"> 
                 <h1 >Chapter 4</h1>
                 <h3> Cryptographic hash functions and mining</h3>
+            </font>
           </div>  
         <div class = "row">
             <div class = "col-sm-2"> </div>
@@ -187,23 +189,37 @@
             <div class = "col-sm"> 
             <br>
                 <p>Most of the internet security is nowadays based on cryptographic hash functions like SHA256.</p>
+                
                 <p>What are hash functions?</p>
+                
                 <p>Hash functions are mathematical functions that takes a message in order to generate a hash (commonly a 256 bit binary word).</p>
-                <p>for example:</p>
-                <p>SHA256("message") = 00101001010010011101...011011</p>
-                <p>like The digital signature, the only way to find back a message from the output of a hash function is to guess it.</p>
-                <p>About cryptographic hash functions:</p>
-                <ul>* They are deterministic: The same message always result in the same hash</ul>
-                <ul>* It is easy to compute a hash from a word.</ul>
-                <ul>* A small change in the message completely changes the hash.</ul>
-                <ul>* It is impossible to find two different messages with the same hash.</ul>
+                
+                <p>For example:</p>
+                    <div class = "text-center">
+                        <p>SHA256("message") = 00101001010010011101...011011</p>
+                    </div>
+                
+                <p>Like the digital signature, the only way to find back a message from the output of a hash function is to guess it.</p>
+                
+                <h5>About cryptographic hash functions:</h5>
+                
+                <ul>- They are deterministic: The same message always result in the same hash</ul>
+                <ul>- It is easy to compute a hash from a word.</ul>
+                <ul>- A small change in the message completely changes the hash.</ul>
+                <ul>- It is impossible to find two different messages with the same hash.</ul>
+                
                 <p>How do we use it for Coinet?</p>
                 <p>In our case, we select a number N between 1 and 256 for example 40. Then, we try to find a hash with forty 0 at the begining.</p>
                 <p>ex: 00000000000000000000000000000000000000010101010101010101010111010111110110111... </p>
-                <p>to find this hash, we use the history of the transactions and a number that we should guess.</p>
-                <p>we should find a number so this equality is true:</p>
-                <p>SHA256( history of transaction + number ) = hash with N 0's at the beginning</p>
-                <p>so we have to try several numbers and guess it, this step is called mining. The probability to find a good hash is is 1/(2^N). Which means that for N=40, the probability of having a good hash is 1/(2^40)= 1/ 1 099 511 627 776. N changes periodically so it takes around 10 minutes to find a good number.</p>
+                
+                <p>To find this hash, we use the history of the transactions and a number that we should guess.</p>
+                
+                <p>We should find a number so this equality is true:</p>
+                    <div class = "text-center">
+                        <p>SHA256( history of transaction + number ) = hash with N 0's at the beginning</p>
+                    </div>
+                
+                <p>So we have to try several numbers and guess it, this step is called mining. The probability to find a good hash is 1/(2^N). Which means that for N=40, the probability of having a good hash is 1/(2^40)= 1/ 1 099 511 627 776. N changes periodically so it takes around 10 minutes to find a good number.</p>
                 <p>This particular number that we just found is called a proof of work. It proves that the miner had to make a lot of computational work and it has to be easy to verify.</p>
                 <img src = "images/img_hash_functions.png" width = "100%">
                 <p>The most important step about understanding Coinet is to understand why people have to keep mining and why it is an awesome idea in order to securise our currency. These questions will be answered in our next chapter: the blockchain.</p>
